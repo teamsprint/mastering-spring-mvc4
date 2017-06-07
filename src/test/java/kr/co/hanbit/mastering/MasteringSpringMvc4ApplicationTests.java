@@ -1,4 +1,4 @@
-package ko.co.hanbit.mastering;
+package kr.co.hanbit.mastering;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

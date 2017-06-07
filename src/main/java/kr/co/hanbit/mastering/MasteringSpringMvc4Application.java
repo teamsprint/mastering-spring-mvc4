@@ -1,4 +1,4 @@
-package ko.co.hanbit.mastering;
+package kr.co.hanbit.mastering;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

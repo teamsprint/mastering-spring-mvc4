@@ -28,11 +28,9 @@ public class HelloController {
     @RequestMapping("/")
     public String hello(@RequestParam(defaultValue = "teamsprint") String search, Model model) {
         SearchResults searchResults = twitter.searchOperations().search(search);
-        List<String> tweets = searchResults.getTweets().stream().map(Tweet::getText).collect(Collectors.toList());
-//        String text = searchResults.getTweets().get(0).getText();
-//        LOGGER.debug(text);
+        List<Tweet> tweets = searchResults.getTweets();
         model.addAttribute("tweets", tweets);
-//        model.addAttribute("message", text);
+        model.addAttribute("search", search);
         return "resultPage";
     }
 }

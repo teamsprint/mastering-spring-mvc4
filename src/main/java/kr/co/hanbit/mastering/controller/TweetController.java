@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by jhkim on 2017. 6. 7..
  */
 @Controller
-public class HelloController {
-    private static Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
+public class TweetController {
+    private static Logger LOGGER = LoggerFactory.getLogger(TweetController.class);
 
     @SuppressWarnings("SpringJavaAutowiringInspection")
     @Autowired

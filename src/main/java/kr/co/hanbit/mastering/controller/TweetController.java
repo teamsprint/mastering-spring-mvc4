@@ -25,6 +25,11 @@ public class TweetController {
     private Twitter twitter;
 
     @RequestMapping("/")
+    public String home() {
+        return "searchPage";
+    }
+
+    @RequestMapping("/result")
     public String hello(@RequestParam(defaultValue = "teamsprint") String search, Model model) {
         SearchResults searchResults = twitter.searchOperations().search(search);
         List<Tweet> tweets = searchResults.getTweets();
